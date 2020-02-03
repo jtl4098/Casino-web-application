@@ -1,0 +1,89 @@
+td{
+    border: 1px solid black;
+    width: 70px;
+    text-align: center;
+}
+.inplay{
+    margin-top: 20%;
+    margin-bottom: auto;
+    width:100%;
+
+    background: url('../image/casino.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.dicetable{
+    text-align: center;
+    background-color: lightgreen;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type=text]{
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit], input[type=button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.formdiv{
+    
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.formdiv_signup{
+    
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.formp{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+#guidetext{
+    width : 80%;
+    text-align: center;
+    margin: auto;
+}

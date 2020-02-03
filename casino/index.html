@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<!-- /**
+ * 
+ * Program : index.html
+ * @author : Taekyung Kil
+ * Date : 10/Oct/2019
+ I, Taekyung Kil, student number 000799798 , 
+ certify that all code submitted is my own work; that I have not copied it from any other source. 
+  I also certify that I have not allowed my work to be copied by others.
+ */ -->
+
+ <!--
+     change log
+
+     the project plan is changed to casino game but the main idea is the same
+     a user can log in and log out. In addition, user's money data is going to update when the user play a game.  
+     jQyery plan is changed to hide and show login form
+
+ -->
+<head>
+    <title>Casino Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="css/dicestyle.css">
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/firstpage.js"></script>
+    <script src="js/dice.js"></script>
+
+  
+</head>
+
+<body>
+
+   
+
+    <div class="formdiv" id="formdiv">
+        <form id="userform_login">
+            <p class=formp>Welcome to Casino</p>
+            <label for="username">User Name</label>
+            <input type="text" name = "login_username" id="login_username" placeholder="Enter your name" required>
+            <label for="userbank">User Password</label>
+            <input type="password" name="login_userpassword" id="login_userpassword" placeholder="Password">
+            <input type="submit">
+            <input type="button" id="btn_regist" name="btn-regist" value="Create an account"/>
+            <p>Before to start, this is a casino game. Please use it only when you are 19 or older </p>
+        </form>
+    </div>
+
+    <div class="formdiv_signup">
+        <form id="userform">
+            <p class=formp>Welcome to Casino</p>
+            <label for="username">User Name</label>
+            <input type="text" name = "username" id="username" placeholder="Enter your name" required/>
+            <label for="userbank">User Password</label>
+            <input type="password" name="userpassword" id="userpassword" placeholder="Password"/>
+            
+            <input type="text"id="Fname" name="Fname" placeholder="First Name"/>
+            <input type="text"id="Lname" name="Lname" placeholder="Last Name"/>
+
+            <input type="number"id="money" name="money" placeholder="Money"/>
+            <input type="submit" value="Sign Up">
+            <input type="button" id="btn_loginPage" name="btn-loginPage" value="Back to Sign in page"/>
+            <p>Before to start, this is a casino game. Please use it only when you are 19 or older </p>
+        </form>
+    </div>
+
+    
+    <div class= "inplay" id="ingame">
+                    
+            <div  class ="dicetable">
+            <p id="userstatus"></p>
+            <table>
+                <tr>
+                
+                    <th><img src="image/icons8-dice-five-96.png" id="firstDiceImage"/>
+                    </th>
+                    <th>
+                            <img src="image/icons8-dice-five-96.png" id="secondDiceImage"/>
+                    </th>
+                    <th>
+                            <img src="image/icons8-dice-five-96.png" id="thirdDiceImage"/>
+                    </th>    
+                </tr>
+            </table>
+            <table>
+                
+                <tr>
+                    <td id="small">Small</td>
+                    <td id="odd">ODD</td>
+                    <td id="even">EVEN</td>
+                    <td id="big">Big</td>
+                </tr>   
+            </table>
+
+            <table>
+                <tr>
+                    <td id="five">$5</td>
+                    <td id="ten">$10</td>
+                </tr>
+            </table>
+            <p id="msg"></p>
+            <input type="button" value="Roll the Dice !!" id="rollbutton">
+            <input type="button" value="Restart the game" id="restart">
+            <input type="button" value="Guide" id="guide">
+            <input type="button" value="Log out" id="logout">
+            <p id="guidetext">The user can bet on one of the four options. In case of victory, the user get double the amount of betting. The user can bet five dollar or 10 dollar   <br>Small = the sum of three dices is smaller than 12 (<12). <br> Big = the sum of three dices is greater than 11(>11).<br> ODD = the sum of three dices is odd number. <br> EVEN = the sum of three dices is even number.'</p>
+            
+            
+            <p id="errmsg"></p>
+            </div>
+        </div>
+
+     
+   
+</body>
+
+
+</html>
